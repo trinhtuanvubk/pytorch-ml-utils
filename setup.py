@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-  name = 'pytorch-custom-utils',
+  name = 'pytorch-ml-utils',
   packages = find_packages(exclude=[]),
   version = '0.0.1',
   license='MIT',
