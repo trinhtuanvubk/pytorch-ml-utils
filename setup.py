@@ -5,7 +5,7 @@ setup(
   packages = find_packages(exclude=[]),
   version = '0.0.1',
   license='MIT',
-  description = 'Pytorch Custom Utils',
+  description = 'Pytorch ML Utils',
   author = 'Tuan-Vu Trinh',
   author_email = 'tuanvutrinh.ai@gmail.com',
   long_description_content_type = 'text/markdown',
