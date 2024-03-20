@@ -1,10 +1,13 @@
+import os
+import sys
+import math
+import requests
+
 import torch
 import numpy as np
 import requests
 from tqdm import tqdm
 from loguru import logger
-import sys
-import math
 from PIL import Image
 
 def seed_everything(seed_value):
@@ -32,3 +35,15 @@ def download_with_progressbar(url, save_path):
         logger.error("Something went wrong while downloading models")
         sys.exit(0)
 
+
+def get_pretrain_folder(pretrain_dir):
+    folder = f'./ckpt/{pretrain_dir}/checkpoints'
+    if not os.path.exists(folder):
+        os.makedirs(folder)
+    return folder
+
+def get_ckpt_folder(ckpt_dir):
+    folder = f'./ckpt/{ckpt_dir}/checkpoints'
+    if not os.path.exists(folder):
+        os.makedirs(folder)
+    return folder
